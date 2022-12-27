@@ -1,0 +1,166 @@
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	min-height: 40px;
+	&._scroll {
+		.header__wrapper {
+			background: rgb(30, 37, 43);
+		}
+		.header__body {
+			min-height: 70px;
+		}
+	}
+	&__wrapper {
+		transition: background 0.3s ease 0s;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 50;
+	}
+
+	&__container {
+	}
+
+	&__body {
+		transition: min-height 0.3s ease 0s;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: 100px;
+	}
+
+	&__logo {
+	}
+
+	&__menu {
+	}
+
+	&__button {
+	}
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	&__img {
+		margin-right: 12px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 33px;
+		color: $whiteColor;
+	}
+}
+.menu {
+	flex: 0 1 431px;
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__link {
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 24px;
+		color: $grayColor;
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: $whiteColor;
+		}
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		padding: 5px 0;
+		position: relative;
+		&:hover {
+			.menu__sub-list {
+				opacity: 1;
+				transform: translate(0px, 0px);
+				visibility: visible;
+				pointer-events: auto;
+			}
+			.chevron {
+				transform: rotate(-180deg);
+				color: $whiteColor;
+			}
+		}
+	}
+
+	&__sub-list {
+		position: absolute;
+		background: $orangeColor;
+		border-radius: 5px;
+		padding: 15px;
+		flex: 1 1 100%;
+		min-width: 200px;
+		left: 0;
+		top: 100%;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 0.3s ease 0s;
+		pointer-events: none;
+		transform: translate(0px, 10px);
+	}
+
+	&__sub-item {
+		&:not(:last-child) {
+			margin: 0px 0px 5px 0px;
+		}
+	}
+
+	&__sub-link {
+		color: $whiteColor;
+		line-height: 33px;
+		&:hover {
+			color: $grayColor;
+		}
+	}
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	&__login {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		color: rgba(255, 255, 255, 0.78);
+		transition: color 0.3s ease 0s;
+		&:hover {
+			color: $whiteColor;
+		}
+	}
+
+	&__signup {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 24px;
+		color: #fdf5ff;
+		padding: 12px 28px;
+		min-height: 48px;
+		margin-left: 41px;
+		transition: all 0.3s ease 0s;
+	}
+}
+
+//==================
+.chevron {
+	color: $grayColor;
+	margin: 0px 0px 0px 8px;
+	transition: all 0.3s ease 0s;
+	font-size: 12px;
+}

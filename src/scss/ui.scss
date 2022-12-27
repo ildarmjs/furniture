@@ -1,0 +1,44 @@
+._footer-title {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 30px;
+	color: $whiteColor;
+}
+._title {
+	font-weight: 500;
+	font-size: 48px;
+	line-height: 130%;
+	color: $whiteColor;
+}
+
+._text {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 30px;
+	color: $grayColor;
+}
+.icon {
+	font-size: 24px;
+	color: $grayColor;
+}
+._btn-hover {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 24px;
+	color: $grayColor;
+	padding: 9px 35px;
+	height: 42px;
+}
+._btn-orange {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background: $orangeColor;
+	border-radius: 8px;
+	text-align: center;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		color: $grayColor;
+		background: #d7774f;
+	}
+}

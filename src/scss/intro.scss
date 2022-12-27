@@ -1,9 +1,4 @@
-.page {
-	&__intro {
-	}
-}
 .intro {
-	position: relative;
 	height: 700px;
 	overflow: hidden;
 	margin-bottom: 200px;
@@ -17,17 +12,12 @@
 	}
 
 	&__content {
-		flex: 0 0 600px;
+		flex: 0 0 750px;
 	}
 
 	&__image {
-		flex: 1 1 auto;
-
 		img {
-			position: absolute;
-			right: 110px;
-			top: 20%;
-			z-index: 3;
+			transform: translateY(-45px);
 		}
 	}
 }
@@ -42,6 +32,9 @@
 		line-height: 140%;
 		color: $whiteColor;
 		margin-bottom: 30px;
+		span {
+			color: $orangeColor;
+		}
 	}
 
 	&__text {

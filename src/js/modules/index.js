@@ -32,7 +32,7 @@ export function headerFixed() {
 	headerObserver.observe(header)
 }
 
-// Функция плавной прокрутки к нужному разделу (якорь)
+// Функция плавной прокрутки к нужному разделу (якорь) =====================================================================================
 export function anchor() {
 	const menuLinks = document.querySelectorAll('._link[data-goto]')
 	if (menuLinks.length > 0) {

@@ -23,7 +23,7 @@ _Приложение использует [Node.js](https://nodejs.org/) для
 
 ```
 $ git clone https://github.com/ildarmjs/antools-devcrew.git
-$ cd antools/
+$ cd antools-devcrew/
 $ npm i
 $ npm run dev
 ```

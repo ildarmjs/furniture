@@ -21,14 +21,13 @@
 	}
 
 	&__items {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 -12.5px;
+		display: grid;
+		column-gap: 25px;
+		grid-template-columns: repeat(3, minmax(392px, 1fr));
+		min-height: 294px;
 	}
 
 	&__item {
-		flex: 0 1 33.333%;
-		padding: 0px 12.5px;
 		margin-bottom: 100px;
 	}
 	&__button {
@@ -121,7 +120,7 @@
 	&__head {
 	}
 	&__image {
-		margin-right: 30px;
+		margin-right: 28px;
 	}
 
 	&__name {

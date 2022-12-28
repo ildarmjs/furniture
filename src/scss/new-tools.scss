@@ -32,13 +32,12 @@
 		flex: 0 1 50%;
 	}
 	&__items {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 -12px;
+		display: grid;
+		column-gap: 24px;
+		grid-template-columns: repeat(2, minmax(288px, 1fr));
+		min-height: 284px;
 	}
 	&__item {
-		flex: 0 1 50%;
-		padding: 0 12px;
 		margin-bottom: 50px;
 		&:nth-child(3) {
 			margin: 0;

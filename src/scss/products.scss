@@ -9,9 +9,9 @@
 
 	&__items {
 		display: grid;
-		grid-template-columns: repeat(4, 305px);
-		/* grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); */
-		gap: 32px;
+		/* grid-template-columns: repeat(4, 305px); */
+		grid-template-columns: repeat(auto-fit, minmax(293px, 1fr));
+		gap: 20px;
 	}
 
 	&__item {

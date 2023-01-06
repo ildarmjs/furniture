@@ -1131,10 +1131,9 @@ h6 {
 .products__items {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (305px)[4];
-  grid-template-columns: repeat(4, 305px);
-  /* grid-template-columns: repeat(auto-fit, minmax(285px, 1fr)); */
-  gap: 32px;
+  /* grid-template-columns: repeat(4, 305px); */
+  grid-template-columns: repeat(auto-fit, minmax(293px, 1fr));
+  gap: 20px;
 }
 
 .products__footer {

@@ -1,6 +1,6 @@
-## Тестовое задание для компании "DevCrew"
+## Landing page 'Furniture'"
 
-### [Пример реализации](https://ildarmjs.github.io/antools-devcrew/)
+### [Пример реализации](https://ildarmjs.github.io/furniture/)
 
 <br/>
 
@@ -13,7 +13,6 @@
 - Css3
   - Scss
 - JavaScript
-- Font Awesome
 
 <br />
 
@@ -22,8 +21,8 @@
 _Приложение использует [Node.js](https://nodejs.org/) для своей работы_
 
 ```
-$ git clone https://github.com/ildarmjs/antools-devcrew.git
-$ cd antools-devcrew/
+$ git clone https://github.com/ildarmjs/furniture.git
+$ cd furniture/
 $ npm i
 $ npm run dev
 ```

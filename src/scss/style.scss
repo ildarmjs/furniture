@@ -1,44 +1,36 @@
 @use 'sass:math';
 
+// Подключение шрифтов
+@import 'config/fonts';
+
+// Миксины
+@import 'mixins.scss';
 // Подключение переменных
 @import 'vars.scss';
 
 // Обнуление =============
 @import 'reset.scss';
 
-// Стили для иконок
-@import 'icons.scss';
-// Базовые стили
-@import 'base.scss';
-// Общие стили
-@import 'ui.scss';
 // =======================
-// Шапка
 @import 'header.scss';
-
-// 1 блок intro
-@import 'intro.scss';
-// 2 блок tools
-@import 'tools.scss';
-// 3 блок brands
-@import 'brands.scss';
-// 4 блок new-tools
-@import 'new-tools.scss';
-// 5 блок slider
-@import 'slider.scss';
-// 6 блок contributor
-@import 'contributor.scss';
-
-// Подвал
+@import 'icons.scss';
+@import 'base.scss';
 @import 'footer.scss';
+
+@import 'slider.scss';
+@import 'ui.scss';
+@import 'advantages.scss';
+@import 'products.scss';
+@import 'rooms.scss';
+@import 'tips.scss';
+@import 'gallery.scss';
 
 button {
 	background-color: transparent;
 }
 body {
-	color: $whiteColor;
-	background: $blackColor;
-	font-family: 'Poppins', sans-serif;
+	color: $blackColor;
+	font-family: gilroy;
 	font-size: 16px;
 }
 

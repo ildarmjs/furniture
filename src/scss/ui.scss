@@ -1,44 +1,130 @@
 ._footer-title {
-	font-weight: 500;
-	font-size: 20px;
-	line-height: 30px;
-	color: $whiteColor;
-}
-._title {
-	font-weight: 500;
-	font-size: 48px;
-	line-height: 130%;
-	color: $whiteColor;
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	@include adaptiv-value('font-size', 24, 20, 1);
+	line-height: 29px;
+	color: #000000;
 }
 
-._text {
-	font-weight: 500;
-	font-size: 18px;
-	line-height: 30px;
-	color: $grayColor;
+.slider-arrows {
+	display: grid;
+	grid-template-columns: repeat(2, 48px);
+	column-gap: 8px;
 }
-.icon {
-	font-size: 24px;
-	color: $grayColor;
+.slider-arrow {
+	pointer-events: auto;
+	border-radius: 50%;
+	height: 48px;
+	color: $orangeColor;
+	font-size: 12px;
+	cursor: pointer;
+	background: rgba(232, 159, 113, 0.3);
+	transition: all 0.3s ease 0s;
+	&_prev {
+		&::before {
+			transform: rotate(90deg);
+		}
+	}
+
+	&_next {
+		&::before {
+			transform: rotate(-90deg);
+		}
+	}
+	@media (any-hover: hover) {
+		&:hover {
+			color: #fff;
+			background: rgba(232, 159, 113, 1);
+		}
+	}
+	&_white {
+		box-shadow: 0 4px 14px 1px rgba(0, 0, 0, 0.16);
+		background: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				color: #fff;
+				background: $orangeColor;
+			}
+		}
+	}
 }
-._btn-hover {
-	font-weight: 600;
-	font-size: 16px;
-	line-height: 24px;
-	color: $grayColor;
-	padding: 9px 35px;
-	height: 42px;
-}
-._btn-orange {
+
+.btn {
 	display: inline-flex;
+	padding: 0 15px;
 	justify-content: center;
 	align-items: center;
-	background: $orangeColor;
-	border-radius: 8px;
 	text-align: center;
 	transition: all 0.3s ease 0s;
-	&:hover {
-		color: $grayColor;
-		background: #d7774f;
+	min-height: 48px;
+
+	&_white {
+		color: $orangeColor;
+		background: #fff;
+		@media (any-hover: hover) {
+			&:hover {
+				background: $orangeColor;
+				color: #fff;
+			}
+		}
 	}
+}
+
+._title {
+	text-align: center;
+	line-height: 120%;
+	font-weight: 700;
+	@include adaptiv-value('font-size', 40, 24, 1);
+}
+
+// Dotts
+.swiper-pagination-bullets {
+	display: flex;
+	flex-wrap: wrap;
+	.swiper-pagination-bullet {
+		cursor: pointer;
+		flex: 0 0 27px;
+		height: 27px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: 2px 0;
+		background: $orangeColor;
+		border: 1px solid $grayColor;
+
+		&:not(:last-child) {
+			margin-right: 12px;
+		}
+		&::after {
+			content: '';
+			width: 11px;
+			height: 11px;
+			border-radius: 50%;
+			background: #d8d8d8;
+			transition: background 0.3s ease 0s;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 50%;
+			border: 1px solid $orangeColor;
+			transition: transform 0.3s ease 0s;
+			transform: scale(0);
+		}
+	}
+	.swiper-pagination-bullet-active {
+	}
+}
+
+._flyImage._ibg {
+	opacity: 1;
+	position: fixed;
+	z-index: 100;
+	transition: all 1s ease 0s;
 }

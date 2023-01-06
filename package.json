@@ -15,7 +15,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/ildarmjs/antools-devcrew.git"
+		"url": "git+https://github.com/ildarmjs/furniture.git"
 	},
 	"keywords": [
 		"gulp",
@@ -27,7 +27,7 @@
 	],
 	"author": "Ildar Mingazov",
 	"license": "ISC",
-	"homepage": "https://ildarmjs.github.io/antools-devcrew/",
+	"homepage": "https://ildarmjs.github.io/furniture/",
 	"devDependencies": {
 		"@babel/core": "^7.19.1",
 		"@babel/polyfill": "^7.12.1",

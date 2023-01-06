@@ -1,13 +1,15 @@
-$whiteColor: rgba(255, 255, 255, 0.9);
-$blackColor: #1e252b;
-$grayColor: rgba(255, 255, 255, 0.55);
-$yellowColor: rgba(255, 165, 55, 0.55);
-$yelowColorHover: #ffa537;
-$orangeColor: #ff6e30;
+$whiteColor: #fff;
+$blackColor: #3a3a3a;
+$grayColor: #898989;
+$darkGrayColor: #616161;
+$orangeColor: #e89f71;
 
 $minWidth: 320;
 $maxWidth: 1440;
-$maxWidthContainer: 1254;
+$maxWidthContainer: 1270;
 
-
-
+// Переменные для медиа запросов
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98 ;
+$md4: 479.98;
